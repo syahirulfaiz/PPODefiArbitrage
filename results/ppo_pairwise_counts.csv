@@ -1,0 +1,9 @@
+comparator,ppo_wins,ties,ppo_losses,ppo_faster,ppo_slower,time_ties,time_pairs_available,time_pairs_unavailable,Cumulative profit (PPO / Other / Tie),Successful atomic complete-decision time (PPO / Other / Tie)
+Greedy,215,0,15,204,26,0,230,0,215 / 15 / 0,204 / 26 / 0
+SAC,230,0,0,0,0,0,0,230,230 / 0 / 0,N/A
+TD3,230,0,0,3,227,0,230,0,230 / 0 / 0,3 / 227 / 0
+Bellman_Ford_NetworkX,179,0,51,230,0,0,230,0,179 / 51 / 0,230 / 0 / 0
+Heuristic,179,0,51,229,1,0,230,0,179 / 51 / 0,229 / 1 / 0
+Beam_Search,179,0,51,230,0,0,230,0,179 / 51 / 0,230 / 0 / 0
+Grid_Search,179,0,51,230,0,0,230,0,179 / 51 / 0,230 / 0 / 0
+NLP_SciPy_Minimize,179,0,51,230,0,0,230,0,179 / 51 / 0,230 / 0 / 0

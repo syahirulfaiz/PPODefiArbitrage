@@ -1,0 +1,29 @@
+# --- HPC / generated ---
+logs/
+models/
+__pycache__/
+*.pyc
+
+# --- raw web snapshots (pool-sorting helpers) ---
+*.mhtml
+
+# --- HPC job scripts (contain cluster account + paths) ---
+slurm_*.sh
+
+# --- large generated evaluation artifacts ---
+results/raw_runs.csv
+results/transactions.csv
+results/*.xlsx
+
+# --- backups ---
+*.BACKUP.*
+*.bak
+
+# --- binaries / archives / secrets ---
+*.zip
+*.pt
+*.pth
+*.ckpt
+.env
+*.key
+credentials*
