@@ -26,8 +26,8 @@ Framework for Atomic DeFi Triangular Arbitrage"* (IEEE TNSE resubmission).
 ├── driver.py                           # 2,070-episode evaluation of 9 methods
 ├── chart.py                            # renders the paper figures from the workbook
 ├── requirements.txt
-├── slurm_ppr01_runs_v2.10_train.sh     # HPC training job
-├── slurm_driver_v2.10.sh               # HPC evaluation job
+├── slurm_train.example.sh              # HPC training job template (fill <PLACEHOLDER>s)
+├── slurm_driver.example.sh             # HPC evaluation job template (fill <PLACEHOLDER>s)
 ├── DATASET/                            # pool / token-price / wallet snapshots + generators
 ├── models/                             # checkpoints, HPO trials, selection.json (generated)
 ├── results/                            # raw_runs.csv, summary CSVs, workbook, figures/ (generated)
@@ -90,11 +90,12 @@ python driver.py \
 python chart.py --input results/PPR01_V209_EVALUATION_job9851603.xlsx
 ```
 
-On the KU HPC cluster, create `logs/` first, then:
+On an HPC cluster, create `logs/` first, then submit the provided templates after
+replacing the `<PLACEHOLDER>` fields (`<PARTITION>`, `<ACCOUNT>`, `<PROJECT_ROOT>`, `<CONDA_ENV>`):
 
 ```bash
-sbatch slurm_ppr01_runs_v2.10_train.sh
-sbatch slurm_driver_v2.10.sh
+sbatch slurm_train.example.sh
+sbatch slurm_driver.example.sh
 ```
 
 ## 6. Protocol (matches the manuscript)

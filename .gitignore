@@ -9,6 +9,7 @@ __pycache__/
 
 # --- HPC job scripts (contain cluster account + paths) ---
 slurm_*.sh
+!slurm_*.example.sh
 
 # --- large generated evaluation artifacts ---
 results/raw_runs.csv
