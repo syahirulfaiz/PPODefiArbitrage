@@ -65,7 +65,7 @@ NetworkX 3.4, pandas 2.3, matplotlib 3.10).
 Gas costs are sampled by an **empirical bootstrap of paired gas-price/gas-usage
 rows** taken from real Ethereum transactions (Etherscan). No KDE model is used.
 The experiment is a controlled snapshot simulation, not a historical replay and
-not an on-chain deployment (`submitted_onchain = False`).
+not an on-chain deployment .
 
 ## 5. Reproduce (two steps + figures)
 
