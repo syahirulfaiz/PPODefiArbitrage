@@ -1,4 +1,4 @@
-# PPR01 — Constrained DRL for Sequential Atomic Triangular Arbitrage (TNSE v2.10)
+# Constrained DRL for Sequential Atomic Triangular Arbitrage (TNSE v2.10)
 
 Reproducible code for the manuscript *"A Constrained Deep Reinforcement Learning
 Framework for Atomic DeFi Triangular Arbitrage"* (IEEE TNSE resubmission).
